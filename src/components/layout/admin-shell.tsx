@@ -55,7 +55,7 @@ export function AdminShell({ children, title }: { children: ReactNode; title: st
           <div className="grid h-8 w-8 place-items-center rounded-lg gradient-gold">
             <Coins className="h-4 w-4" />
           </div>
-          <span className="text-base font-bold">Trader Unit - Admin</span>
+          <span className="text-base font-bold">Profit Scape - Admin</span>
         </Link>
         <nav className="flex-1 space-y-1">
           {visibleItems.map((i) => {

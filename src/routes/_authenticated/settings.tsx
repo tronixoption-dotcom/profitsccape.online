@@ -197,7 +197,7 @@ function SettingsPage() {
 
   const installApp = async () => {
     if (isStandalone) {
-      toast.success("Trader Unit is already installed.");
+      toast.success("Profit Scape is already installed.");
       return;
     }
     if (installPrompt) {
@@ -359,7 +359,7 @@ function SettingsPage() {
             <div>
               <h2 className="text-sm font-semibold">Download app</h2>
               <p className="mt-1 text-xs text-muted-foreground">
-                Install Trader Unit on Android or iPhone from your browser.
+                Install Profit Scape on Android or iPhone from your browser.
               </p>
             </div>
           </div>

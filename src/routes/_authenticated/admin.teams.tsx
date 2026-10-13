@@ -40,7 +40,7 @@ function TeamsPage() {
   const fn = useServerFn(adminGetTeamTree);
   const { data } = useQuery({ queryKey: ["admin-teams"], queryFn: () => fn() });
   const forest = useMemo(() => (data ? buildForest(data as Profile[]) : []), [data]);
-  const root: TreeNode = { name: "Trader Unit", children: forest };
+  const root: TreeNode = { name: "Profit Scape", children: forest };
 
   return (
     <AdminShell title="Teams & Referrals">

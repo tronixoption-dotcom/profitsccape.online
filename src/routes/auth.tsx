@@ -143,7 +143,7 @@ function AuthPage() {
           <div className="grid h-9 w-9 place-items-center rounded-xl gradient-gold">
             <Coins className="h-5 w-5" />
           </div>
-          <span className="text-xl font-bold">Trader Unit</span>
+          <span className="text-xl font-bold">Profit Scape</span>
         </Link>
         <div className="glass-card rounded-2xl p-6">
           <div className="mb-6 flex rounded-lg bg-muted/40 p-1">

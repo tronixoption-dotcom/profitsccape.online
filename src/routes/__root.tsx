@@ -70,13 +70,13 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "Trader Unit - Copy Trading Signals" },
+      { title: "Profit Scape - Copy Trading Signals" },
       {
         name: "description",
         content:
-          "Trader Unit helps clients follow copy trading signals, track trades, and earn direct income from referred trade profits.",
+          "Profit Scape helps clients follow copy trading signals, track trades, and earn direct income from referred trade profits.",
       },
-      { property: "og:title", content: "Trader Unit" },
+      { property: "og:title", content: "Profit Scape" },
       {
         property: "og:description",
         content:
@@ -100,7 +100,7 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
 
 function RootShell({ children }: { children: ReactNode }) {
   return (
-    <html lang="en" className="dark">
+    <html lang="en" className="light">
       <head>
         <HeadContent />
       </head>

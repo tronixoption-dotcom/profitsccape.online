@@ -29,9 +29,9 @@ function Landing() {
       <header className="mx-auto flex max-w-6xl items-center justify-between px-4 py-4 sm:px-6">
         <div className="flex items-center gap-2">
           <div className="grid h-9 w-9 place-items-center overflow-hidden rounded-lg bg-slate-950 ring-1 ring-primary/40">
-            <img src="/favicon.png" alt="Trader Unit" className="h-7 w-7 object-contain" />
+            <img src="/favicon.png" alt="Profit Scape" className="h-7 w-7 object-contain" />
           </div>
-          <span className="text-lg font-bold tracking-tight">Trader Unit</span>
+          <span className="text-lg font-bold tracking-tight">Profit Scape</span>
         </div>
         <div className="flex items-center gap-3">
           <Link
@@ -62,7 +62,7 @@ function Landing() {
                 Trade from signal codes and earn when your team profits.
               </h1>
               <p className="mt-5 max-w-xl text-base leading-7 text-muted-foreground sm:text-lg">
-                The new Trader Unit flow is built around admin-managed copy trading analysts, manual
+                The new Profit Scape flow is built around admin-managed copy trading analysts, manual
                 signal codes, visible transactions, and 3% direct income from referred trade profit.
               </p>
               <div className="mt-8 flex flex-wrap gap-3">
@@ -146,7 +146,7 @@ function Landing() {
       </main>
 
       <footer className="mx-auto flex max-w-6xl items-center justify-between border-t border-border/40 px-4 py-6 text-xs text-muted-foreground sm:px-6">
-        <span>Copyright {new Date().getFullYear()} Trader Unit</span>
+        <span>Copyright {new Date().getFullYear()} Profit Scape</span>
         <span className="inline-flex items-center gap-1">
           <Zap className="h-3 w-3" /> Copy trading system
         </span>

@@ -19,7 +19,7 @@ function TeamPage() {
     : "";
   const copy = () => { navigator.clipboard.writeText(link); toast.success("Referral link copied"); };
   const share = () => {
-    if (navigator.share) navigator.share({ title: "Join Trader Unit", text: `Use my code ${data?.referralCode}`, url: link });
+    if (navigator.share) navigator.share({ title: "Join Profit Scape", text: `Use my code ${data?.referralCode}`, url: link });
     else copy();
   };
 

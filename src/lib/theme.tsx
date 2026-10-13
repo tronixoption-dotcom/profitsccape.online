@@ -6,9 +6,9 @@ const ThemeCtx = createContext<Ctx | null>(null);
 
 export function ThemeProvider({ children }: { children: ReactNode }) {
   // SSR must render the same tree as the client's first paint. We default to
-  // "dark" on both, then sync from localStorage after mount to avoid hydration
+  // "light" on both, then sync from localStorage after mount to avoid hydration
   // mismatches on the <html> element.
-  const [theme, setThemeState] = useState<Theme>("dark");
+  const [theme, setThemeState] = useState<Theme>("light");
 
   useEffect(() => {
     const stored = (typeof window !== "undefined" && localStorage.getItem("theme")) as Theme | null;
@@ -29,6 +29,6 @@ export function ThemeProvider({ children }: { children: ReactNode }) {
 
 export function useTheme() {
   const ctx = useContext(ThemeCtx);
-  if (!ctx) return { theme: "dark" as Theme, toggle: () => {}, setTheme: () => {} };
+  if (!ctx) return { theme: "light" as Theme, toggle: () => {}, setTheme: () => {} };
   return ctx;
 }

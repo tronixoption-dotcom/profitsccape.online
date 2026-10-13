@@ -1,12 +1,12 @@
 {
-  "name": "Trader Unit",
-  "short_name": "Trader Unit",
-  "description": "Trader Unit wallet, market, KYC, and copy trading app.",
+  "name": "Profit Scape",
+  "short_name": "Profit Scape",
+  "description": "Profit Scape wallet, market, KYC, and copy trading app.",
   "start_url": "/home",
   "scope": "/",
   "display": "standalone",
-  "background_color": "#07111f",
-  "theme_color": "#07111f",
+  "background_color": "#f7fbfc",
+  "theme_color": "#f7fbfc",
   "icons": [
     {
       "src": "/favicon.png",

@@ -1230,7 +1230,7 @@ export const adminGetSystemSettings = createServerFn({ method: "GET" })
     if (error) throw error;
     return data ?? {
       id: 1,
-      platform_name: "Trader Unit",
+      platform_name: "Profit Scape",
       min_deposit: 10,
       min_withdrawal: 1,
       deposit_fee_rate: 0.05,

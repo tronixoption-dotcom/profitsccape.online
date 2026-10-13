@@ -87,18 +87,18 @@ export function ClientShell({
               </span>
             </Link>
             <h1 className="truncate text-lg font-semibold tracking-tight">
-              {title ?? "Trader Unit"}
+              {title ?? "Profit Scape"}
             </h1>
           </div>
           <div className="flex items-center gap-2">
             <button
               onClick={onLogoClick}
-              aria-label="Trader Unit"
+              aria-label="Profit Scape"
               className="grid h-9 w-9 place-items-center overflow-hidden rounded-lg bg-slate-900 ring-1 ring-primary/40"
             >
               <img
                 src="/favicon.png"
-                alt="Trader Unit"
+                alt="Profit Scape"
                 className="h-7 w-7 object-contain"
                 onError={(e) => {
                   const img = e.currentTarget as HTMLImageElement;

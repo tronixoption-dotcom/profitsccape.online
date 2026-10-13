@@ -522,7 +522,7 @@ export const getMarketData = createServerFn({ method: "GET" }).handler(async () 
     try {
       const res = await fetch(url, {
         headers: {
-          "user-agent": "Mozilla/5.0 TraderUnit/1.0",
+          "user-agent": "Mozilla/5.0 ProfitScape/1.0",
           accept: "application/rss+xml, application/xml, text/xml",
         },
       });

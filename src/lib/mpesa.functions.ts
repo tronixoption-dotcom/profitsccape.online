@@ -117,7 +117,7 @@ export async function queryWithdrawalPayoutStatus({
     CommandID: "BusinessPayment",
     PartyA: shortcode,
     IdentifierType: 4,
-    Remarks: "Trader Unit payout status check",
+    Remarks: "Profit Scape payout status check",
     QueueTimeOutURL:
       readEnvValue("MPESA_B2C_QUEUE_URL", "DARAJA_B2C_QUEUE_URL", "DARAJA_B2C_TIMEOUT_URL") ??
       queueUrl,
@@ -184,7 +184,7 @@ export async function initiateWithdrawalPayout({
     Amount: Math.round(amount),
     PartyA: shortcode,
     PartyB: normalizePhone(phone),
-    Remarks: `Trader Unit withdrawal ${withdrawalId.slice(0, 8)}`,
+    Remarks: `Profit Scape withdrawal ${withdrawalId.slice(0, 8)}`,
     QueueTimeOutURL:
       readEnvValue("MPESA_B2C_QUEUE_URL", "DARAJA_B2C_QUEUE_URL", "DARAJA_B2C_TIMEOUT_URL") ??
       queueUrl,
@@ -294,7 +294,7 @@ export const initiateStkPush = createServerFn({ method: "POST" })
       PhoneNumber: phone,
       CallBackURL: callbackUrl,
       AccountReference: `MH-${dep.id.slice(0, 8)}`,
-        TransactionDesc: "Trader Unit Deposit",
+      TransactionDesc: "Profit Scape Deposit",
     };
 
     const res = await fetch(`${baseUrl}/mpesa/stkpush/v1/processrequest`, {

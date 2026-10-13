@@ -16,7 +16,7 @@ export const Route = createFileRoute("/_authenticated/admin/settings")({
 });
 
 const defaults = {
-  platform_name: "Trader Unit",
+  platform_name: "Profit Scape",
   min_deposit: 10,
   min_withdrawal: 1,
   deposit_fee_rate: 0.05,
